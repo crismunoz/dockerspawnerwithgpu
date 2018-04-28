@@ -36,7 +36,7 @@ c.DockerSpawner.container_ip = "0.0.0.0"
 from tornado import gen
 from jupyterhub.auth import Authenticator
 
-the_password = 'ica123!'
+the_password = 'a secret'
 class DummyAuthenticator(Authenticator):
     @gen.coroutine
     def authenticate(self, handler, data):
